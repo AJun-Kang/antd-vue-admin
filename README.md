@@ -4,12 +4,12 @@
 vue3+ts 构建的后台管理系统。
 
 #### 软件架构
-vue3:前端框架;
-ts:js的超集;
-antd-vue:UI框架;
-antv-g2:图表可视化;
-vite:前端新一代工具链;
-pinia:Vue 的存储库;
+1.  vue3:前端框架;
+2.  ts:js的超集;
+3.  antd-vue:UI框架;
+4.  antv-g2:图表可视化;
+5.  vite:前端新一代工具链;
+6.  pinia:Vue 的存储库;
 
 
 #### 安装教程
