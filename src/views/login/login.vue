@@ -7,13 +7,13 @@
 		<a-form layout="horizontal" :model="state.formInline" @submit.prevent="handleSubmit">
 			<a-form-item>
 				<a-input v-model:value="state.formInline.username" size="large" placeholder="admin">
-					<template #prefix><user-outlined  /></template>
+					<template #prefix><user-outlined /></template>
 				</a-input>
 			</a-form-item>
 			<a-form-item>
 				<a-input v-model:value="state.formInline.password" size="large" type="password" placeholder="123456"
 					autocomplete="new-password">
-					<template #prefix><lock-outlined  /></template>
+					<template #prefix><lock-outlined /></template>
 				</a-input>
 			</a-form-item>
 
@@ -32,8 +32,8 @@ import { UserOutlined, LockOutlined } from '@ant-design/icons-vue';
 import router from '../../router/index';
 import { message, Modal } from 'ant-design-vue';
 import { useCounterStore } from '../../store/index'
+import { login } from '../../api/api'
 const counterStore = useCounterStore()
-
 
 const state = reactive({
 	loading: false,
@@ -45,7 +45,6 @@ const state = reactive({
 		captchaId: '',
 	},
 });
-
 
 
 const setCaptcha = async () => {
@@ -61,6 +60,13 @@ const handleSubmit = async () => {
 	message.loading('登录中...', 0);
 	state.loading = true;
 	console.log(state.formInline);
+	//模拟接口
+	login({
+		username: "admin",
+		pwd: "123456"
+	}).then(res => {
+		console.log(res);
+	})
 	const err = username.trim() == 'admin' || password.trim() == '123456'
 	if (err) {
 		localStorage.setItem('username', 'admin');
