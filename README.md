@@ -18,8 +18,9 @@ vue3+ts 构建的后台管理系统。
 
 #### 使用说明
 
-1.  运行： npm run dev
-2.  打包： npm run build
+1.  初始化： npm install
+2.  运行：   npm run dev
+2.  打包：   npm run build
 
 #### 参与贡献
 
