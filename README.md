@@ -14,15 +14,12 @@ pinia:Vue 的存储库
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  git clone https://gitee.com/kang-Junkai/antd-vue-admin.git
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  运行： npm run dev
+2.  打包： npm run build
 
 #### 参与贡献
 
