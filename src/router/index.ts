@@ -78,8 +78,8 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
     console.log("页面传递参数:");
     console.log(from);
-    document.title = `${to.meta.title} | antd-vue-admin`;
-    const role = localStorage.getItem('ms_username');
+    document.title = `${to.meta.title} | antd-admin`;
+    const role = localStorage.getItem('username');
     if (!role && to.path !== '/login') {
         console.log("去登录");
         next('/login');

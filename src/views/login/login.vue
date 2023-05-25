@@ -63,7 +63,7 @@ const handleSubmit = async () => {
 	console.log(state.formInline);
 	const err = username.trim() == 'admin' || password.trim() == '123456'
 	if (err) {
-		localStorage.setItem('ms_username', 'admin');
+		localStorage.setItem('username', 'admin');
 		counterStore.login_status = true
 		message.success('登录成功！');
 		router.push('/')
