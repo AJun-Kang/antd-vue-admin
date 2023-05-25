@@ -24,7 +24,7 @@ const routes: RouteRecordRaw[] = [
         },
         children: [
             {
-                path: '/Home',
+                path: '/',
                 name: 'Home',
                 component: Home,
                 meta: {
@@ -76,6 +76,8 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
+    console.log("页面传递参数:");
+    console.log(from);
     document.title = `${to.meta.title} | antd-vue-admin`;
     const role = localStorage.getItem('ms_username');
     if (!role && to.path !== '/login') {

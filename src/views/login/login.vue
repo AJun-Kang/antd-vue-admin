@@ -7,13 +7,13 @@
 		<a-form layout="horizontal" :model="state.formInline" @submit.prevent="handleSubmit">
 			<a-form-item>
 				<a-input v-model:value="state.formInline.username" size="large" placeholder="admin">
-					<template #prefix><user-outlined type="user" /></template>
+					<template #prefix><user-outlined  /></template>
 				</a-input>
 			</a-form-item>
 			<a-form-item>
 				<a-input v-model:value="state.formInline.password" size="large" type="password" placeholder="123456"
 					autocomplete="new-password">
-					<template #prefix><lock-outlined type="user" /></template>
+					<template #prefix><lock-outlined  /></template>
 				</a-input>
 			</a-form-item>
 
@@ -66,7 +66,7 @@ const handleSubmit = async () => {
 		localStorage.setItem('ms_username', 'admin');
 		counterStore.login_status = true
 		message.success('登录成功！');
-		router.push('Home')
+		router.push('/')
 	} else {
 		Modal.error({
 			title: () => '提示',

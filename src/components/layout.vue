@@ -62,7 +62,7 @@
                                 退出登录
                             </a-menu-item>
                             <a-menu-divider />
-                            <a-menu-item key="3" disabled>3rd menu item（disabled）</a-menu-item>
+                            <a-menu-item key="3" disabled>禁用（disabled）</a-menu-item>
                         </a-menu>
                     </template>
                 </a-dropdown>
@@ -104,7 +104,7 @@ const select = (e: any) => {
     state.selectedKeys = [e.key]
     switch (e.key) {
         case '1':
-            router.push('Home')
+            router.push('/')
             break;
         case '2':
             router.push('Form')

@@ -4,7 +4,7 @@
                 <a-breadcrumb-item>后台</a-breadcrumb-item>
                 <a-breadcrumb-item>可视化</a-breadcrumb-item>
             </a-breadcrumb>
-            <div class="tables" :style="{}">
+            <div class="tables">
                 <interval></interval>
                 <interval2></interval2>
                 <interval3></interval3>
@@ -26,7 +26,6 @@ import Pie from '../views/charts/Pie.vue'
 .tables {
     padding: 24px;
     background: #fff;
-    min-Height: 360px;
     display: flex;
     flex-wrap: wrap;
 }
