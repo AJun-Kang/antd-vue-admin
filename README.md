@@ -10,7 +10,7 @@ vue3+ts 构建的后台管理系统。
 4.  antv-g2:图表可视化;
 5.  vite:前端新一代工具链;
 6.  pinia:Vue 的存储库;
-
+7.  axios:一个基于 promise 网络请求库
 
 #### 安装教程
 1.  git clone https://github.com/AJun-Kang/antd-vue-admin.git
