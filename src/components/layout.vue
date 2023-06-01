@@ -1,5 +1,5 @@
 <template>
-    <a-layout style="min-height: 100vh" >
+    <a-layout style="min-height: 100vh;" >
         <a-layout-sider v-model:collapsed="collapsed" collapsible>
             <div class="logo">
                 <a-image :width="30" src="../static/images/vite.svg" />

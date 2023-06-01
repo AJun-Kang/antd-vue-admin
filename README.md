@@ -13,8 +13,8 @@ vue3+ts 构建的后台管理系统。
 
 
 #### 安装教程
-
-1.  git clone https://gitee.com/kang-Junkai/antd-vue-admin.git
+1.  git clone https://github.com/AJun-Kang/antd-vue-admin.git
+2.  国内镜像：git clone https://gitee.com/kang-Junkai/antd-vue-admin.git
 
 #### 使用说明
 
